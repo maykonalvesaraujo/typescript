@@ -1,0 +1,26 @@
+Usando o watch Mode: 
+comando: tsc src/script.ts -w (ou --watchMode)  
+=> permite que o arquivo seja ouvido sempre que hover mudança;
+=> gera um arquivo.js novo (com a mudança feita no arquivo.ts).
+
+tsc --init : cria o tsconfig.json do typescript. 
+Objetivo: configurações para projeto.
+
+ - Após sua criação é possível (no terminal) escrever o comando 'tsc' para o typescript 
+"criar" o arquivo de compilação JS (acredito que seja isso "arquivo de compilação");
+
+"exclude": []  - PS: existe o gitignore que ignora na hora de enviar pro github
+=> array onde é permitido inserir 'files', 'folders' (itens específicos) que NÃO será compilado.
+=> EX: " *.dev.ts " (será excluído tds arquivos com '.dev.ts');
+
+"inlude": []
+=> array onde é permitido inserir 'files', 'folders' (itens específicos) que SERÁ compilado.
+=> EX: "src/*" (Tudo que estiver dentro da pasta será compilado pra JS).
+=> EX: "src/*", "app.ts" (a pasta e o arquivo seram compilados pra JS).
+
+target: "es5" => versão do Ecma Script (JavaScript)
+
+outDir
+rootDir
+
+PS: lembrar de estudar mais na documentação ou na em outro plataforma.
